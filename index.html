@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Personal Portfolio - Dark Theme with Burgundy Accent and Symbol Transitions</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<header>
+  <nav aria-label="Primary navigation">
+    <div class="logo" tabindex="0">Menakuru varudhini</div>
+    <ul class="nav-list">
+      <li><a href="#about" class="active" aria-current="page">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="about" tabindex="-1" aria-label="About me section">
+    <h2>About Me</h2>
+    <p class="about-text">Hello! I am a passionate software developer specializing in building modern web applications. With a keen eye for design and a commitment to clean, maintainable code, I enjoy turning ideas into functional digital experiences.</p>
+  </section>
+  <section id="projects" tabindex="-1" aria-label="Projects section">
+    <h2>Projects</h2>
+    <div class="projects-grid" role="list">
+      <article class="project-card" tabindex="0" role="listitem" aria-label="Project One, an innovative web application">
+        <h3>Project One</h3>
+        <p>An innovative web application to a business with real-time collaboration features.</p>
+        <div class="project-links">
+          <a href="https://github.com/varuu21/rr-catering" target="_blank" rel="noopener" aria-label="GitHub repository for Project One">GitHub</a>
+          <a href="https://rrcaterers.netlify.app/" target="_blank" rel="noopener" aria-label="Live demo of Project One">Live Demo</a>
+        </div>
+      </article>
+      <article class="project-card" tabindex="0" role="listitem" aria-label="Portfolio Website project">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio site showcasing projects, skills, and contact information with a responsive design.</p>
+        <div class="project-links">
+          <a href="https://github.com/varuu21/portfolio.git" target="_blank" rel="noopener" aria-label="GitHub repository for Portfolio Website">GitHub</a>
+          <a href="#" aria-disabled="true" style="color:#552233; cursor:not-allowed;" aria-label="Live demo not available for Portfolio Website">Live Demo</a>
+        </div>
+      </article>
+      <article class="project-card" tabindex="0" role="listitem" aria-label="Chat Application project">
+        <h3>Chat Application</h3>
+        <p>A real-time chat app featuring messaging, user presence, emoji support, and responsive layout.</p>
+        <div class="project-links">
+          <a href="https://github.com/varuu21/task2.git  " target="_blank" rel="noopener" aria-label="GitHub repository for Chat Application">GitHub</a>
+          <a href="https://chat-applicationa.netlify.app/" target="_blank" rel="noopener" aria-label="Live demo of Chat Application">Live Demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section id="skills" tabindex="-1" aria-label="Skills section">
+    <h2>Skills</h2>
+    <div class="skills-list" aria-label="List of skills">
+      <span class="skill-pill">JavaScript</span>
+      <span class="skill-pill">React</span>
+      <span class="skill-pill">Node.js</span>
+      <span class="skill-pill">Java</span>
+      <span class="skill-pill">HTML &amp; CSS</span>
+      <span class="skill-pill">TypeScript</span>
+      <span class="skill-pill">GraphQL</span>
+      <span class="skill-pill">Docker</span>
+      <span class="skill-pill">Git</span>
+      <span class="skill-pill">WebSockets</span>
+    </div>
+  </section>
+  <section id="contact" tabindex="-1" aria-label="Contact section">
+    <h2>Contact Me</h2>
+    <form class="contact-form" aria-label="Contact form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Menakuru varudhini" required autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="mvarudhini214@gmail.com" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2024 M.Varudhini. All rights reserved.
+</footer>
+</body>
+</html>
+
